@@ -23,17 +23,17 @@
       <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="..\src" testLevel="RunAllTestsInOrg" rollbackOnError="true" logType="Debugonly"/>
        -->
 		<!--<sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="..\src\removeclasses" rollbackOnError="true"/>-->
-    	<sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="." rollbackOnError="true"/>
+    	<sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot=".\src" rollbackOnError="true"/>
     </target>		
 	
 	
-	<target name="proxy">
+	<!--<target name="proxy">
 		<property name="proxy.host" value="10.98.2.8" />
 		<property name="proxy.port" value="8080" />
 		<property name="proxy.user" value="UserName" />
 		<property name="proxy.pwd" value="Password" />
 		<setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" proxyuser="${proxy.user}" proxypassword="${proxy.pwd}" />
-	</target>
+	</target>-->
 	
 		
 </project>
